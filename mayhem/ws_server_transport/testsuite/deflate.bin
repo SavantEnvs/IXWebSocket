@@ -1,0 +1,9 @@
+GET /chat HTTP/1.1
+Host: 127.0.0.1:8008
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+Á”7ú!=}4î°y·põ7èôpÜ =ƒ7ú!=E›Vˆ‚7ú!=4

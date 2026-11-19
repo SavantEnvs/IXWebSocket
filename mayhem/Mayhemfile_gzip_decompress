@@ -1,0 +1,11 @@
+project: savantenvs/IXWebSocket
+target: gzip_decompress
+
+cmds:
+  - cmd: /mayhem/fuzz_gzip_decompress
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/gzip_decompress/testsuite

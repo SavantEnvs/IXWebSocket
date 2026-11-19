@@ -1,0 +1,11 @@
+project: savantenvs/IXWebSocket
+target: socks5_connect
+
+cmds:
+  - cmd: /mayhem/fuzz_socks5_connect
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/socks5_connect/testsuite

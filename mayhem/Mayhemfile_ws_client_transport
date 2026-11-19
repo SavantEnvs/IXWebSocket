@@ -1,0 +1,11 @@
+project: savantenvs/IXWebSocket
+target: ws_client_transport
+
+cmds:
+  - cmd: /mayhem/fuzz_ws_client_transport
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ws_client_transport/testsuite

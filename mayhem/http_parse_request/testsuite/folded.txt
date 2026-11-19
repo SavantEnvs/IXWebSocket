@@ -1,0 +1,5 @@
+GET / HTTP/1.0
+X-Long:   value with spaces   
+X-Empty:
+Connection: keep-alive, Upgrade
+

@@ -1,0 +1,11 @@
+project: savantenvs/IXWebSocket
+target: permessage_deflate
+
+cmds:
+  - cmd: /mayhem/fuzz_permessage_deflate
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/permessage_deflate/testsuite
